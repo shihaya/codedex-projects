@@ -1,0 +1,120 @@
+html {
+    font-family: "Special Elite", system-ui;
+    font-size: 2em;
+    letter-spacing: .1em;
+    min-height: 100vh;
+    color: #d8e9ef;
+    background-image: url("images/background.png");
+    background-size: cover;
+}
+
+.app-container {
+    width: 50%;
+    height: 400px;
+    margin: 6rem auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+.app-message {
+    height: 20px;
+    font-size: 0.6rem;
+}
+
+.app-circle {
+    position: relative;
+    margin: 4rem auto;
+    width: 300px;
+    height: 300px;
+}
+
+.circle-shape {
+    pointer-events: none;
+}
+
+.semi-circle {
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    box-sizing: border-box;
+    border: solid 6px;
+}
+
+.left-side {
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+    transform: rotate(0deg);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-right: none;
+    z-index: 1;
+}
+
+.right-side {
+    top: 0;
+    left: 150px;
+    transform-origin: left center;
+    transform: rotate(0deg);
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-left: none;
+}
+
+.circle {
+    border-color: #90c0d1;
+    box-shadow: #90c0d1 0 0 50px 5px;
+}
+
+.app-counter-box {
+    font-size: 2.6rem;
+    position: relative;
+    top: 115px;
+    color: #d8e9ef;
+}
+
+input[type="number"] {
+    font-family: "Special Elite", system-ui;
+    color: #d8e9ef;
+    font-size: 2.6rem;
+    text-align: center;
+    width: 1.4em;
+    border: none;
+    background: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    font-family: "Special Elite", system-ui;
+    position: relative;
+    top: 120px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #d8e9ef;;
+}
+
+button:hover {
+    color: #90c0d1;
+}
+
+.btn-reset {
+    display: block;
+    margin: 0 auto;
+    font-size: .6rem;
+    text-transform: lowercase;
+}
