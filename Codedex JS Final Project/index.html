@@ -9,8 +9,13 @@
 </head>
 <body>
 <div class="app-container">
+    <!--title-->
     <h1>pomodoro</h1>
-    <div class="app-message">press start to begin. try editing the numbers.</div>
+    <!--message-->
+    <div class="app-message">press start to begin. change the numbers directly to use as a timer, or enable the custom
+        session to customize pomodoro.
+    </div>
+    <!--circle timer-->
     <div class="app-circle">
         <div class="circle-shape">
             <div class="semi-circle right-side circle-mask"></div>
@@ -18,17 +23,45 @@
             <div class="semi-circle left-side circle-mask"></div>
             <div class="semi-circle left-side circle"></div>
         </div>
+        <!--timer text-->
         <div class="app-counter-box">
             <label><input type="number" class="minutes" value="25" min="0"></label>:<label><input type="number"
                                                                                                   class="seconds"
                                                                                                   value="00" min="0"
                                                                                                   max="59"></label>
         </div>
+        <!--timer controls-->
         <button class="btn-start">start</button>
         <button class="btn-pause">pause</button>
         <button class="btn-reset">reset</button>
+        <!--session info-->
+        <div class="app-session">now: work</div>
+        <div class="app-pomodoros">today: 0</div>
+    </div>
+    <!--settings-->
+    <div class="app-settings">
+        <!--custom session settings-->
+        <div class="app-settings-box">
+            <label>custom session: <input type="checkbox" class="custom-settings-check"></label>
+            <label>work (minutes): <input type="number" id="work-time" value="25" min="0" max="99"></label>
+            <label>break (minutes): <input type="number" id="break-time" value="5" min="0" max="99"></label>
+            <label>long break (minutes): <input type="number" id="long-break-time" value="15" min="0"
+                                                max="99"></label>
+            <label>long break interval (pomodoros): <input type="number" id="long-break-interval" value="4" min="0"
+                                                           max="99">
+            </label>
+
+        </div>
+        <!--visual settings-->
+        <label>accent color: <input type="text" data-coloris/></label>
+        <label>background image: <input type="file" class="image-input" accept=".png, .jpg, .jpeg"/> </label>
+        <!--reset buttons-->
+        <button class="btn-session-settings">reset session settings</button>
+        <button class="btn-visual-settings">reset color and background</button>
     </div>
 </div>
 </body>
 <script src="app.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
 </html>
