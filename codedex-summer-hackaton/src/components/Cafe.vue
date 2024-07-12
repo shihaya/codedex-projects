@@ -103,13 +103,6 @@ export default {
         console.error(error);
       });
 
-      // Cube for reference and easy positioning
-      const geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
-      const material = new THREE.MeshBasicMaterial({color: 0x00ff00});
-      const cube = markRaw(new THREE.Mesh(geometry, material));
-      cube.position.set(-1.5, 1, -2);
-      this.scene.add(cube);
-
       // Ambient Light
       const ambientLight = markRaw(new THREE.AmbientLight(0x404040, 50));
       ambientLight.position.set(-1.5, 1, -2).normalize();
@@ -137,6 +130,7 @@ export default {
       this.animate();
     },
     animate() {
+  
       requestAnimationFrame(this.animate);
 
       this.controls.update();
