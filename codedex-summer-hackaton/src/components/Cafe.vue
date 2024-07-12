@@ -70,8 +70,8 @@ export default {
 
       // Model loader
       const loader = new GLTFLoader();
-      const model = new URL('../assets/Cafe Model/scene.gltf', import.meta.url).href;
-      const calendarModel = new URL('../assets/Calendar Model/scene.gltf', import.meta.url).href;
+      const model = new URL('/public/Cafe Model/scene.gltf', import.meta.url).href;
+      const calendarModel = new URL('/public/Calendar Model/scene.gltf', import.meta.url).href;
 
       loader.load(model, (gltf) => {
         const cafeModel = markRaw(gltf.scene);
