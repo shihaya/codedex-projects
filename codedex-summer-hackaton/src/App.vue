@@ -1,10 +1,14 @@
-<script setup>
-import HomeView from "./views/HomeView.vue";
-</script>
-
 <template>
-  <HomeView />
+  <div>
+    <Cafe/>
+    <DetailsView/>
+  </div>
 </template>
+
+<script setup>
+import Cafe from './components/Cafe.vue';
+import DetailsView from "./views/DetailsView.vue";
+</script>
 
 <style scoped>
 

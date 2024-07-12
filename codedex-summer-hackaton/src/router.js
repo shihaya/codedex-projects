@@ -1,18 +1,18 @@
 import {createRouter, createWebHistory} from "vue-router"
-import HomeView from "./views/HomeView.vue"
 import AboutView from "./views/AboutView.vue"
 import GamesView from "./views/GamesView.vue";
-import MenuView from "./views/MenuView.vue";
 import ReservationsView from "./views/ReservationsView.vue";
-import ScheduleView from "./views/ScheduleView.vue";
+import Schedule from "./components/Schedule.vue";
+import Cafe from "./components/Cafe.vue";
+import Menu from "./components/Menu.vue";
 
 const routes = [
-    {path: "/", component: HomeView},
+    {path: "/", component: Cafe},
     {path: "/about", component: AboutView},
     {path: "/games", component: GamesView},
-    {path: "/menu", component: MenuView},
+    {path: "/menu", component: Menu},
     {path: "/reservations", component: ReservationsView},
-    {path: "/schedule", component: ScheduleView},];
+    {path: "/schedule", component: Schedule},];
 
 const router = createRouter({
     history: createWebHistory(),
