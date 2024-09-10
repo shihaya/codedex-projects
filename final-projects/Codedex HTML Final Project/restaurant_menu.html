@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: #12050f;
+            color: #12050f;
+            font-size: 18px;
+        }
+
+        header {
+            background-color: #12050f;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 180px;
+            z-index: 10;
+
+            .fade {
+                width: 50%;
+                height: 180px;
+                position: fixed;
+                right: 0;
+                background: linear-gradient(5deg, rgba(18, 5, 15, 1) 0%, rgba(18, 5, 15, 1) 15%, rgba(18, 5, 15, 1) 25%, rgba(18, 5, 15, 0) 100%);
+                z-index: 1;
+            }
+
+            #header-img {
+                object-fit: cover;
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                right: 0;
+            }
+
+            #name {
+                color: bisque;
+                font-family: Algerian, serif;
+                font-size: 72px;
+                margin-left: 50px;
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        nav {
+            margin-left: 60px;
+
+            a {
+                margin-left: 140px;
+                font-size: 36px;
+                text-decoration: none;
+                color: bisque;
+                font-family: Algerian, serif;
+            }
+
+            a:hover {
+                color: #e24a54;
+            }
+        }
+
+        main {
+            margin-top: 250px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            h2 {
+                font-family: Algerian, serif;
+                font-size: 50px;
+                text-align: center;
+                color: bisque;
+            }
+
+            #menu {
+                margin-bottom: 150px;
+
+                #articles_wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                article {
+                    background-color: bisque;
+                    width: 40%;
+                    height: 400px;
+                    margin: 16px;
+                    border-radius: 20px;
+                    padding: 20px;
+
+                    .menu_fade {
+                        position: relative;
+                        width: calc(100% + 40px);
+                        margin: -20px -20px -40px;
+                        height: 250px;
+                        background: linear-gradient(0deg, rgba(255, 228, 196, 1) 0%, rgba(255, 228, 196, 1) 15%, rgba(255, 228, 196, 0) 100%);
+                        border-radius: 20px 20px 0 0;
+                        z-index: 1;
+                    }
+
+                    img {
+                        position: relative;
+                        object-fit: cover;
+                        width: calc(100% + 40px);
+                        margin: -270px -20px -20px;
+                        height: 250px;
+                        border-radius: 20px 20px 0 0;
+                    }
+
+                    h3 {
+                        font-family: Algerian, serif;
+                        font-size: 24px;
+                        margin-top: 20px;
+                        margin-bottom: 0;
+                    }
+
+                    i {
+                        font-size: 20px;
+                    }
+
+                }
+            }
+
+            #order-form {
+                background-color: bisque;
+                border-radius: 20px;
+                padding: 16px;
+
+                h2 {
+                    color: #12050f;
+                }
+
+                #order {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                div {
+                    margin-bottom: 40px;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    text-align: left;
+
+                    p {
+                        text-align: center;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .number_input {
+                    margin-top: 16px;
+                    width: 40px;
+                }
+
+                .checkbox_input {
+                    margin: 16px 0 0;
+                    width: 40px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+
+                #textarea_div {
+                    text-align: center;
+                }
+
+                textarea {
+                    margin-top: 16px;
+                    resize: vertical;
+                }
+
+                #submit_button {
+                    font-size: 16px;
+                    font-weight: bold;
+                    width: 200px;
+                    height: 40px;
+                    background-color: #e24a54;
+                    color: bisque;
+                    border: none;
+                    border-radius: 20px;
+                    margin-bottom: 40px;
+                }
+
+                #submit_button:hover {
+                    background-color: #12050f;
+                    color: bisque;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        footer {
+            p {
+                width: 50%;
+                margin: 50px auto;
+                text-align: center;
+                color: bisque;
+            }
+        }
+    </style>
+
+    <title>SpiceFusion Grill</title>
+</head>
+
+<body>
+<header>
+    <div class="fade"></div>
+    <img src="https://shorturl.at/dDQWX" alt="assorted arabic dishes" id="header-img">
+
+    <h1 id="name">SpiceFusion Grill</h1>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order-form">Order</a>
+    </nav>
+</header>
+
+<main>
+    <section id="menu">
+        <h2>Menu</h2>
+        <div id="articles_wrapper">
+            <article>
+                <div class="menu_fade"></div>
+                <img src="https://shorturl.at/jpqSV" alt="mezze platter">
+                <h3>Mezze Platter</h3>
+                <p>A delightful assortment of hummus, baba ganoush, muhammara, stuffed grape leaves, and falafel,
+                    served
+                    with warm pita bread and pickled vegetables. <br><br> <b><i>$15.99</i></b></p>
+            </article>
+            <article>
+                <div class="menu_fade"></div>
+                <img src="https://shorturl.at/jAKO6" alt="shawarma bowl">
+                <h3>Shawarma Fusion Bowl</h3>
+                <p>A hearty bowl featuring a blend of sliced chicken and beef shawarma, served over a bed of
+                    seasoned
+                    rice, topped with grilled vegetables and tahini sauce. <br><br>
+                    <b><i>$16.99</i></b>
+                </p>
+            </article>
+            <article>
+                <div class="menu_fade"></div>
+                <img src="https://shorturl.at/agwL2" alt="beef burger">
+                <h3>Spicy Harissa Beef Burger</h3>
+                <p>Flame-grilled beef patty seasoned with fiery harissa spice blend, topped with melted cheese,
+                    caramelized
+                    onions, lettuce, and tomato on a toasted brioche bun. <br><br> <b><i>$13.99</i></b></p>
+            </article>
+            <article>
+                <div class="menu_fade"></div>
+                <img src="https://shorturl.at/acTW9" alt="falafel pita wrap">
+                <h3>Falafel Wrap with Tahini</h3>
+                <p>Crispy falafel patties wrapped in warm pita bread with shredded lettuce, tomatoes, cucumber
+                    slices,
+                    and a
+                    generous drizzle of tahini sauce. <br><br> <b><i>$14.99</i></b></p>
+            </article>
+            <article>
+                <div class="menu_fade"></div>
+                <img src="https://shorturl.at/dgswM" alt="mixed grill platter">
+                <h3>SpiceFusion Grill Platter</h3>
+                <p> A feast for meat lovers featuring a combination of grilled chicken, beef, and lamb kebabs,
+                    served
+                    with grilled vegetables, and a side of spicy harissa sauce. <br><br> <b><i>$19.99</i></b></p>
+            </article>
+        </div>
+    </section>
+
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+            <div id="order">
+                <div>
+                    <p><b>Add items to your order:</b></p>
+                    <br>
+                    <label>Mezze Platter&ensp; <input type="number" min="0" max="10" value="0"
+                                                      class="number_input"></label>
+                    <br>
+                    <label>Shawarma Fusion Bowl&ensp; <input type="number" min="0" max="10" value="0"
+                                                             class="number_input"></label>
+                    <br>
+                    <label>Spicy Harissa Beef Burger&ensp; <input type="number" min="0" max="10" value="0"
+                                                                  class="number_input"></label>
+                    <br>
+                    <label>Falafel Wrap with Tahini&ensp; <input type="number" min="0" max="10" value="0"
+                                                                 class="number_input"></label>
+                    <br>
+                    <label>SpiceFusion Grill Platter&ensp; <input type="number" min="0" max="10" value="0"
+                                                                  class="number_input"></label><br>
+                </div>
+
+                <div>
+                    <p><b>Sides and Add-ons:</b></p>
+                    <br>
+                    <label><input type="checkbox" class="checkbox_input"> Grilled Halloumi
+                        Cheese&ensp;<b><i>$7.99</i></b></label>
+                    <br>
+                    <label><input type="checkbox" class="checkbox_input"> Tabbouleh
+                        Salad&ensp;<b><i>$5.99</i></b></label>
+                    <br>
+                    <label><input type="checkbox" class="checkbox_input"> Pita Chips&ensp;<b><i>$4.99</i></b></label>
+                    <br>
+                    <label><input type="checkbox" class="checkbox_input"> Labne Yogurt&ensp;<b><i>$5.99</i></b></label>
+                    <br>
+                    <label><input type="checkbox" class="checkbox_input"> Za'atar Seasoned
+                        Fries&ensp;<b><i>$9.99</i></b></label>
+                    <br>
+                </div>
+            </div>
+
+            <div id="textarea_div">
+                <label><b>Special Requests:</b>
+                    <br>
+                    <textarea placeholder="Feel free to provide any specific instructions for your order." cols="60"
+                              rows="8"></textarea>
+                </label>
+            </div>
+            <input type="submit" value="Go To Checkout" id="submit_button">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p><b><i>Made with love by Shihaya &#9829;</i></b></p>
+</footer>
+
+</body>
+</html>

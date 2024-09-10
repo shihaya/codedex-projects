@@ -1,0 +1,185 @@
+:root {
+    --main-color: #90c0d1;
+    --main-bgi: url("images/background.png");
+}
+
+html {
+    font-family: "Special Elite", system-ui;
+    font-size: 2em;
+    letter-spacing: .1em;
+    min-height: 100vh;
+    color: #d8e9ef;
+    background-image: var(--main-bgi);
+    background-color: rgba(0, 8, 10, 0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+}
+
+
+.app-container {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 25px;
+}
+
+h1 {
+    margin: 0 auto 1rem;
+    font-size: 1.6rem;
+}
+
+.app-message {
+    height: 20px;
+    font-size: 0.5rem;
+    margin: 0 1rem;
+}
+
+.app-circle {
+    position: relative;
+    margin: 3rem auto 4.4rem;
+    width: 300px;
+    height: 300px;
+    border-color: var(--main-color);
+    box-shadow: var(--main-color) 0 0 50px 5px;
+    border-radius: 100%;
+}
+
+.circle-shape {
+    pointer-events: none;
+}
+
+.semi-circle {
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    box-sizing: border-box;
+    border: solid 6px;
+}
+
+.left-side {
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+    transform: rotate(0deg);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-right: none;
+    z-index: 1;
+}
+
+.right-side {
+    top: 0;
+    left: 150px;
+    transform-origin: left center;
+    transform: rotate(0deg);
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-left: none;
+}
+
+.app-counter-box {
+    font-size: 2.6rem;
+    position: relative;
+    top: 115px;
+}
+
+input[type="number"] {
+    font-family: "Special Elite", system-ui;
+    color: #d8e9ef;
+    font-size: 2.6rem;
+    text-align: center;
+    width: 1.4em;
+    border: none;
+    background: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    font-family: "Special Elite", system-ui;
+    position: relative;
+    top: 120px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #d8e9ef;;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--main-color);
+}
+
+.btn-reset {
+    display: block;
+    margin: 0 auto;
+    font-size: .6rem;
+}
+
+.app-session, .app-pomodoros {
+    font-size: 0.6rem;
+    position: relative;
+    top: 5rem;
+    margin: 0.4rem auto;
+}
+
+.app-settings {
+    font-size: 0.5rem;
+    border-radius: 25px;
+    box-sizing: border-box;
+    max-width: fit-content;
+    margin: auto;
+
+    label {
+        display: block;
+        margin-bottom: 0.6rem;
+        pointer-events: none;
+    }
+
+    label input {
+        pointer-events: auto;
+    }
+
+    input[type="checkbox"]:checked {
+        accent-color: var(--main-color);
+    }
+
+    input[type="number"] {
+        font-size: 0.4rem;
+        font-weight: bold;
+    }
+
+    input:disabled {
+        color: rgba(204, 204, 204, 0.5);
+    }
+}
+
+.image-input {
+    width: 5.2rem;
+    margin: auto;
+}
+
+.btn-session-settings, .btn-visual-settings {
+    font-size: 0.4rem;
+    position: relative;
+    top: 0;
+    margin: 0.4rem 1rem 0 1rem;
+}
+
+.btn-session-settings:disabled {
+    cursor: default;
+}
