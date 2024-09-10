@@ -1,7 +1,6 @@
 <script>
 import {CalendarView, CalendarViewHeader} from "vue-simple-calendar"
 import "vue-simple-calendar/dist/style.css"
-// The next two lines are optional themes
 
 export default {
   data: function () {

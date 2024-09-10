@@ -27,8 +27,8 @@ function closePopup() {
 
 <style scoped>
 .popup {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-  position: fixed; /* Ensure it covers the whole screen */
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
