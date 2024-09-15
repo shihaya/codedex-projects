@@ -1,0 +1,191 @@
+:root {
+    --primary-color: #d7bce8;
+    --secondary-color: #635380;
+    --text-color: #333;
+    --background-color: #f0f0f0;
+    --card-background: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100%;
+    padding: 1rem 0;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.link:hover {
+    color: var(--primary-color);
+}
+
+/* Form Styles */
+form {
+    max-width: 400px;
+    width: 100%;
+    margin: 3rem auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #9c89b0;
+    font-size: 18px;
+}
+
+form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Question Styles */
+h2 {
+    text-align: center;
+    width: 100%;
+    margin: 2rem auto;
+    color: var(--secondary-color);
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    width: 250px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Artwork Styles */
+.result {
+    font-size: 24px;
+    margin: 3rem auto;
+}
+
+.artwork {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.artwork img {
+    max-width: 50%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.artwork p {
+    margin: 1rem auto 0 auto;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #f0f0f0;
+        --background-color: #1a1a1a;
+        --card-background: #2c2c2c;
+        --shadow-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .link {
+        color: var(--text-color);
+    }
+
+    header {
+        background-color: var(--secondary-color);
+        color: white;
+    }
+
+    h2{
+        color: var(--text-color);
+    }
+
+    form input {
+        background-color: #333;
+        color: white;
+        border-color: #444;
+    }
+
+    .artwork img {
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    }
+}
